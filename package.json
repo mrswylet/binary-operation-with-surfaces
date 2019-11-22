@@ -1,0 +1,31 @@
+{
+  "name": "binary-operation-with-surfaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --mode=production --TESTBUILD=true && mocha test-dist/main.js --require=source-map-support/register && RD /S /Q test-dist",
+    "dev": "webpack --mode=development --watch",
+    "build": "webpack --mode=production --TESTBUILD=true && mocha test-dist/main.js --require=source-map-support/register && RD /S /Q test-dist && webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrswylet/binary-operation-with-surfaces.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrswylet/binary-operation-with-surfaces/issues"
+  },
+  "homepage": "https://github.com/mrswylet/binary-operation-with-surfaces#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "source-map-support": "^0.5.16",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
